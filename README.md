@@ -1,4 +1,4 @@
-### My first project in pyhton ###
+### My first project in python ###
 # Statistical Arbitrage Strategy Simulator
 
 This project implements a simple pairs trading strategy using Coca-Cola (KO) and Pepsi (PEP) stock prices. It uses a mean-reverting approach based on the spread's z-score and simulates entry/exit trades.
