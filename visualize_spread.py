@@ -8,13 +8,13 @@ df = pd.read_csv("prices.csv", index_col=0, parse_dates=True)
 ko = df["KO"]
 pep = df["PEP"]
 
-# Step 1: Calculate the spread (KO - PEP)
+# Calculating the spread (KO - PEP)
 spread = ko - pep
 
-# Step 2: Calculate the z-score of the spread
+#Calculating the z-score of the spread
 zscore = (spread - spread.mean()) / spread.std()
 
-# Step 3: Plot the spread and z-score
+#Plotting the spread and z-score
 plt.figure(figsize=(14, 6))
 
 # Subplot 1: Spread
