@@ -11,15 +11,14 @@ print("\nDownload complete.")
 print("\nData shape:", data.shape)
 print("\nColumn structure:\n", data.columns)
 
-# Use .xs to extract 'Close' instead of 'Adj Close'
 if isinstance(data.columns, pd.MultiIndex):
     close_prices = data.xs('Close', level=0, axis=1)
 else:
     close_prices = data[['Close']]
 
-print("\n✅ Close Prices Preview:\n", close_prices.head())
+print("\n Close Prices Preview:\n", close_prices.head())
 
 # Save to file
 close_prices.to_csv("prices.csv")
-print("✅ Saved to prices.csv")
+print(" Saved to prices.csv")
 
